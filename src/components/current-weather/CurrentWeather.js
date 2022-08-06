@@ -15,7 +15,7 @@ function CurrentWeather() {
         <p className="temperature">18°C</p>
         <div className="detail">
           <div className="parameter-row">
-            <span className="parameter-label">Details</span>
+            <span className="parameter-label top">Details</span>
           </div>
           <div className="parameter-row">
             <span className="parameter-label">Feels like</span>
@@ -23,7 +23,7 @@ function CurrentWeather() {
           </div>
           <div className="parameter-row">
             <span className="parameter-label">Wind</span>
-            <span className="parameter-value">2 m/s</span>
+            <span className="parameter-value">2m/s</span>
           </div>
           <div className="parameter-row">
             <span className="parameter-label">Humidity</span>
@@ -31,12 +31,12 @@ function CurrentWeather() {
           </div>
           <div className="parameter-row">
             <span className="parameter-label">Pressure</span>
-            <span className="parameter-value">13 hPa</span>
+            <span className="parameter-value">13hPa</span>
           </div>
         </div>
       </div>
      </div>
-   )
- }
+   );
+ };
 
  export default CurrentWeather
