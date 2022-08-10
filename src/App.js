@@ -1,11 +1,14 @@
 import './App.css';
 import Search from './components/Search/Search';
 import CurrentWeather from './components/current-weather/CurrentWeather';
+import { WEATHER_API_KEY, WEATHER_API_URL } from './api';
 
 export default function App() {
 
   const handleOnSearchChange = (searchData) => {
-    console.log(searchData)
+    const [lat, lon] = searchData.value.split(" ");
+
+    const currentWeatherFetch = fetch(`${WEATHER_API_URL}/weather?lat={lat}&lon={lon}&appid=${WEATHER_API_KEY}`)
   }
 
   return (
