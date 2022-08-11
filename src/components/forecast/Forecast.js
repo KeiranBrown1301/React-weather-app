@@ -1,6 +1,8 @@
 import React from 'react'
 import { Accordion, AccordionItem, AccordionItemButton, AccordionItemHeading, AccordionItemPanel } from "react-accessible-accordion"
 
+const WEEK_DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+
 function Forecast({data}) {
   return (
     <>
@@ -12,6 +14,7 @@ function Forecast({data}) {
               <AccordionItemButton>
                 <div className='daily-item'>
                   <img alt="weather" className='icon-small' src={`icons/${item.weather[0].icon}.png`} />
+                  <label className='day'></label>
                 </div>
               </AccordionItemButton>
             </AccordionItemHeading>
